@@ -1,0 +1,7 @@
+# Store LF in the repo and check out LF on every OS
+* text=auto eol=lf
+
+# Binary files: never diff or convert
+*.xlsx binary
+*.png  binary
+*.webp binary

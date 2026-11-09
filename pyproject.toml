@@ -1,0 +1,17 @@
+# Tool settings only. Install with `pip install -r requirements-dev.txt`.
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-ra"
+
+[tool.ruff]
+line-length = 110
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM"]
+
+[tool.ruff.lint.per-file-ignores]
+# Inline HTML/CSS templates read better unwrapped.
+"build_listing_report.py" = ["E501"]

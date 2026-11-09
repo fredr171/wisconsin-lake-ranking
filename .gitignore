@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+
+# Large public download, fetched again automatically when needed (~6 MB)
+data/wqp_stations_cache.csv
+
+# Interrupted atomic writes, Excel lock files, report written while Excel had it open
+*.tmp
+~$*.xlsx
+output/* (new).xlsx
+
+# Secrets (none are used, but never commit them)
+.env
+.env.*
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini

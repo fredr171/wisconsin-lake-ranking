@@ -1,0 +1,4 @@
+pandas>=2.2
+openpyxl>=3.1        # pandas' .xlsx reader/writer
+beautifulsoup4>=4.12 # WDNR lake page parsing
+markdown>=3.6        # methodology embedded in the listings page
