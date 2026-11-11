@@ -180,3 +180,9 @@ I designed this project and directed and verified the work. I wrote the code wit
 assistance (Claude Code). AI models (Gemini, ChatGPT) also acted as outside reviewers of
 the scoring. Their suggestions were treated as hypotheses, and each was tested against
 the data before it was adopted or rejected (see [`docs/validation.md`](docs/validation.md)).
+
+## License
+
+The code is released under the [MIT License](LICENSE). The source data keeps its own
+terms: OpenStreetMap data is © OpenStreetMap contributors under the ODbL, and WDNR and
+Water Quality Portal data come from their public sources (see [Data sources](#data-sources)).
