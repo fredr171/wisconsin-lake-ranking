@@ -1,5 +1,7 @@
 # Wisconsin Lake Ranking
 
+[![CI](https://github.com/fredr171/wisconsin-lake-ranking/actions/workflows/ci.yml/badge.svg)](https://github.com/fredr171/wisconsin-lake-ranking/actions/workflows/ci.yml)
+
 A Python pipeline that ranks every Wisconsin lake within a drive-time limit on two
 questions a lake-property buyer cares about:
 
@@ -30,7 +32,7 @@ services; the caches are CSV files.
 | How a lake is scored | [`scoring.py`](scoring.py): pure functions, top to bottom. [`docs/methodology.md`](docs/methodology.md) explains each rule. |
 | How the data is gathered | [`lake_finder.py`](lake_finder.py): one function per pipeline step, run in order by `main()` |
 | How the scoring was checked | [`docs/validation.md`](docs/validation.md): data-quality catches, review rounds, what was adopted and rejected |
-| Tests | [`tests/`](tests/): scoring guardrails and failure handling, all offline |
+| Tests | [`tests/`](tests/): scoring guardrails and failure handling, all offline. CI runs `ruff` and `pytest` on every push |
 
 ## How it works
 
